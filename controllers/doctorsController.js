@@ -15,7 +15,8 @@ const getDoctors=async(req,res,next)=>{
         code:200,
         data:{
             doctors:camelcaseKeys.default(data)
-        }
+        },
+        error:null
         })
     }
     catch(error){
@@ -31,7 +32,8 @@ const updateDoctor=async(req,res,next)=>{
         res.json({
         status:'success',
         code:200,
-        data:null
+        data:null,
+        error:null
         })
     }
     catch(error){
@@ -47,7 +49,8 @@ const addDoctor=async(req,res,next)=>{
         res.json({
         status:'success',
         code:201,
-        data:null
+        data:null,
+        error:null
         })
     }
     catch(error){
@@ -66,7 +69,8 @@ const deleteDoctor=async(req,res,next)=>{
         res.json({
         status:'success',
         code:200,
-        data:null
+        data:null,
+        error:null
         })
     }
     catch(error){
