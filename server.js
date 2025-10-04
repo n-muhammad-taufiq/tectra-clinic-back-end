@@ -28,5 +28,5 @@ app.use((req,res,next)=>{
     next(error,req,res);
 });
 app.use(errorHandler);
-app.listen(PORT)
+app.listen(PORT);
 
